@@ -30,7 +30,7 @@ def map():
         'title': "San Francisco",
         'cluster': False,
         'venue': 'SF Center',
-        'event_count': 12
+        'event_count': 20
     }
     },
     ]})
