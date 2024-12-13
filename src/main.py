@@ -15,5 +15,26 @@ def appRoot():
     person = {'name': 'PR request 1', 'birth-year': 1979}
     return jsonify(person)
 
+@app.route('/map')
+def map():
+    r = jsonify({'type':'FeatureCollection',
+    'features': [
+        {'type': 'Feature', 
+        'geometry': {
+        'type': 'Point', 
+        'coordinates': [
+            -122.4194,
+             37.7449
+             ]},
+    'properties':{
+        'title': "San Francisco",
+        'cluster': False,
+        'venue': 'SF Center',
+        'event_count': 12
+    }
+    },
+    ]})
+    return r
+
 if __name__ == '__main__':
     app.run()
