@@ -33,6 +33,20 @@ def map():
         'event_count': 20
     }
     },
+    {'type': 'Feature', 
+        'geometry': {
+        'type': 'Point', 
+        'coordinates': [
+            -122.3960,
+             37.7897
+             ]},
+    'properties':{
+        'title': "SF Tower",
+        'cluster': False,
+        'venue': 'SF Tower',
+        'event_count': 33
+    }
+    },
     ]})
     return r
 
